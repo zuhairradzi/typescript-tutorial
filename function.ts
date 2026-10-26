@@ -19,3 +19,10 @@ function greetingWord (name:string, greeting='Welcome') : string{
 }
 console.log(greetingWord('Zuhair'));
 console.log(greetingWord('Zuhair','Goodbye'));
+
+//optional parameter
+function log(name:string, level?:string):void{
+    console.log(level?? 'INFO', name);
+}
+
+log('Zuhair');
